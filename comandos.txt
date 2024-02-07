@@ -1,1 +1,35 @@
-git config --global user.name "jorge Luis"
+git config --global user.name "jorge Luis"                   -> agregar nombre de usuario
+git config --global user.emai jorge.tomayquispe@unmsm.edu.pe -> agregar email de usuario
+git config --global core.editor "code --wait"                ->termina en espera hasta cierre de editor
+git config --global -e                                       ->archivo de configuracion global
+git config --global core.autocrlf true                       ->comfiguracion de entrada a git
+ls                                                           ->visualizar la carpeta
+pwd                                                          ->visualizar la ubicacion en git
+cd "carpeta"                                                  ->entrar a carpeta
+cd ..                                                        ->salir de carpeta
+mkdir "Nombre de carpeta"                                    ->crear carpeta
+git init                                                     ->iniciar git
+ls -a                                                        ->visualizar capetas escondidas
+git status                                                   ->ver estado en git
+git add "nombre de archivo"                                  ->agregar archi0vo al staged
+git commit -m "descripcion "                                 ->agregar archivo al commit
+git restore --staged  "nombre del archivo"                   ->sacar archivo del staged
+git restore "nombre del archivo"                             ->restaurar archivo
+rm "nombre del archivo"                                      ->eliminando archivo fuera del staged
+git rm "nombre del archivo"                                  ->eliminando archivo dentro del staged            
+mv "nombre del archivo" "nuevo nombre del archivo"           ->renombrando archivo
+git mv "nombre del archivo" "nuevo nombre del archivo"       ->renombrando archivo dentro del staged
+git status -s                                                ->visualizar estado git con menos informacion
+git diff                                                     ->vizualizar cambios al instante
+git diff --staged                                            ->visualizar cambios en el staged
+git log                                                      ->visualizar historial con mucha informacion
+git log --oneline                                            ->vizualizar informacion con poca informacion
+git branch                                                   ->vizualizar ramas
+git checkout -b "nombre de la rama"                          ->creando nueva rama
+git checkout  "nombre de la rama"                            ->cambiando de rama
+cat "nombre del archivo"                                     ->vizualizarcontenido del archivo
+git merge "nombre de rama q se desea extraer"                ->juntando ramas
+code .                                                       ->abrir editor de codigo
+-----pasos para subir a github-----
+git remote add origin https://github.com/jorge22321/miweb 
+git push -u origin "nombre de rama principal" 
